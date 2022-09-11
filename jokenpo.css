@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(7, 118, 245);
+    text-align: center;
+}
+
+div {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+select {
+    font-size: 60pt;
+}
+
+input {
+    font-size: 20pt;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cpuChoice {
+    margin: 0px;
+    font-size: 60pt;
+}
+
+.text {
+    font-size: 20pt;
+}
