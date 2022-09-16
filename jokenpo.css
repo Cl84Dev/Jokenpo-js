@@ -1,12 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(7, 118, 245);
     text-align: center;
 }
 
-div {
+#title {
+    font-size: 20pt;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+main {
     margin: auto;
-    width: 500px;
+    width: 400px;
+    height: 370px;
     text-align: center;
+    font-size: 20pt;
     background-color: white;
     border-radius: 15px;
     padding: 10px;
@@ -14,9 +29,15 @@ div {
 
 select {
     font-size: 60pt;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-input {
+#play {
+    display: block;
+    margin: auto;
+    padding: 10px;
     font-size: 20pt;
     border-radius: 10px;
     text-align: center;
@@ -27,6 +48,21 @@ input {
     font-size: 60pt;
 }
 
-.text {
+footer {
+    background-color: white;
     font-size: 20pt;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#score {
+    display: inline-block;
+}
+
+#reset {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    margin-left: 20pt;
+    display: inline-block;
+    font-size: 15pt;
 }

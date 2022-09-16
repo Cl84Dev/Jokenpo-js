@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="jokenpo.css">
 </head>
 <body>
-    <div>
+    <header id="title">
         <h1>JOKENPO</h1>
-        <h2 id="score">Placar...</h2>
-        <p class="text">Selecione pedra, papel ou tesoura!</p>
+    </header>
+    <main>
+        <p class="text">Toque na caixa de seleção para escolher pedra, papel ou tesoura!</p>
         <select name="" id="player">
             <option value="0">&#9994;</option>
             <option value="1">&#9995;</option>
             <option value="2">&#9996;</option>
         </select>
-        <p><input type="button" value="Jogar!" onclick="jokenpo()"></p>
+        <button id="play" onclick="jokenpoPlay()">Jogar!</button>
         <p id="cpuChoice"></p>
         <p class="text" id="result"></p>
-    </div>
+    </main>
+    <footer><p id="score">Placar...</p><button id="reset" onclick="reset()">Zerar Placar</button></footer>
 </body>
 </html>
