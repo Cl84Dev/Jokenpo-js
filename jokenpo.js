@@ -21,23 +21,24 @@ function jokenpoPlay() {
 function jokenpo() {
     let cpu = parseInt(Math.random() * 3)
     let player = parseInt(playerSelection.value)
-    let cpuOptions = ['&#9994;', '&#9995;', '&#9996;']
+    let options = ['&#9994;', '&#9995;', '&#9996;']
+    let mood = ['&#128556;', '&#128515;', '&#128557;']
 
     if (player === cpu) {
-        result.innerHTML = 'Empatou! &#128556;'
-        tie = tie + 1
+        result.innerHTML = `Empatou! ${mood[0]}`
+        tie++
 
     } else if (player === 0 && cpu === 2 || player === 1 && cpu === 0 || player === 2 && cpu === 1 ) {
-        result.innerHTML = 'Você ganhou! &#128515;'
-        win = win + 1
+        result.innerHTML = `Você ganhou! ${mood[1]}`
+        win++
 
     } else {
-        result.innerHTML = 'Você perdeu! &#128557;'
-        lose = lose + 1
+        result.innerHTML = `Você perdeu! ${mood[2]}`
+        lose++
         
     }
 
-    cpuChoice.innerHTML = cpuOptions[cpu]
+    cpuChoice.innerHTML = options[cpu]
     score.innerHTML = `Vitórias: ${win}  Empates: ${tie}  Derrotas: ${lose}`
 
     setTimeout(() => {
