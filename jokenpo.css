@@ -57,6 +57,8 @@ footer {
 }
 
 #score {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: inline-block;
 }
 
