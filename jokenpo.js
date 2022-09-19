@@ -45,7 +45,7 @@ function jokenpo() {
         playerSelection.disabled = false
         cpuChoice.innerHTML = ''
         result.innerHTML = ''
-    }, 1500)
+    }, 2000)
 }
 
 function reset() {
