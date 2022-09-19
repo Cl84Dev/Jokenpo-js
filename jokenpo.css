@@ -50,9 +50,10 @@ select {
 
 footer {
     background-color: white;
-    font-size: 20pt;
+    font-size: 18pt;
     text-align: center;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 #score {
@@ -60,9 +61,7 @@ footer {
 }
 
 #reset {
-    margin-top: 5pt;
-    margin-bottom: 5pt;
-    margin-left: 20pt;
-    display: inline-block;
+    margin: auto;
+    display: block;
     font-size: 15pt;
 }
